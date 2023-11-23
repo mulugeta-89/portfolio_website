@@ -14,6 +14,59 @@ body {
   color: #4e4e4e;
   font-family: 'Poppins', sans-serif;
 }
+.moving-div {
+  position: relative;
+  animation: moveUpDown 2s ease-in-out infinite alternate; /* Animation properties */
+}
+
+/* Keyframes for the animation */
+@keyframes moveUpDown {
+  0% {
+    top: 0; /* Initial position */
+  }
+  100% {
+    top: 100px; /* Move to this position */
+  }
+}
+.moving-div2 {
+  position: relative;
+  animation: moveLeftRight 2s ease-in-out infinite; /* Animation properties */
+}
+
+/* Keyframes for the animation */
+@keyframes moveLeftRight {
+  0%, 100% {
+    left: 0; /* Initial and final position */
+  }
+  50% {
+    left: 100px; /* Move to this position */
+  }
+}
+
+.face:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 
 h1,
 h2,
