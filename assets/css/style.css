@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #f5f5f5;
+  background-color: #232B2B;
   color: #4e4e4e;
   font-family: 'Poppins', sans-serif;
 }
@@ -28,19 +28,29 @@ body {
     top: 100px; /* Move to this position */
   }
 }
-.moving-div2 {
+/* .moving-div2 {
   position: relative;
   animation: moveLeftRight 2s ease-in-out infinite; /* Animation properties */
-}
+/* } */
 
 /* Keyframes for the animation */
-@keyframes moveLeftRight {
+/* @keyframes moveLeftRight {
   0%, 100% {
-    left: 0; /* Initial and final position */
+    left: 0; 
   }
   50% {
-    left: 100px; /* Move to this position */
+    left: 100px; 
   }
+}  */
+
+.moving-div2 {
+  height: 630px;
+  
+  transition: height 0.5s ease; /* Adding a transition for smooth animation */
+}
+
+.moving-div2:hover {
+  height: 700px; /* Change the height on hover */
 }
 
 .face:hover {
@@ -282,12 +292,12 @@ a:hover {
   border-radius: 50%;
   line-height: 1.6;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px gold;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: gold;
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
@@ -324,7 +334,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px white;
   display: block;
 }
 
@@ -911,14 +921,13 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: 0.7rem;
-  background-color: #0078ff;
+  background-color: goldenrod;
 }
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .service-box {
-  background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -928,7 +937,7 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
+  background-color: wheat;
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
