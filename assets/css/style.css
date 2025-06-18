@@ -292,7 +292,7 @@ a:hover {
   border-radius: 50%;
   line-height: 1.6;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px gold;
+  box-shadow: 0 0 0 3px rgb(220, 212, 169);
   transition: all 500ms ease;
 }
 
